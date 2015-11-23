@@ -1,7 +1,12 @@
 $(document).ready(function() {
 	var bubble = function(event) {
 		var $b = $("<div/>").addClass('bubble');
+
+		var size = Math.random() * 4;
+
 		$b.css({
+			width: size + "em",
+			height: size + "em",
 			left: event.clientX,
 			top: event.clientY
 		});
